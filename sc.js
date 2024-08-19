@@ -22,7 +22,7 @@ function simpleCalculator(num1, num2, operator) {
         case '*':
             return num1 * num2;
         case '%':
-            return num1 * num2;
+            return num1 % num2;
         case '/':
             if (num2 !== 0) {
                 return num1 / num2;

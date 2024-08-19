@@ -6,19 +6,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
-    padding-top: 60px; /* Space for fixed header */
+    height: 10vh;
+    padding:20px;
 }
 
 header {
-    position: fixed; /* Fixes the header to the top of the viewport */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     background-color: #007BFF;
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Ensures the header is on top of other content */
+    z-index: 1000;
 }
 
 nav {
@@ -49,17 +49,17 @@ nav {
 
 .container {
     background-color: #fff;
-    padding: 20px;
+    padding: 0px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    margin-top: 0px;
     text-align: center;
     width: 100%;
-    max-width: 400px;
-    margin-top: 80px; /* Add space at the top to account for the fixed header */
+    max-width: 800px;
+    margin-top: 80px; 
 }
 
 h1 {
+
     color: #333;
-    margin-bottom: 20px;
 }

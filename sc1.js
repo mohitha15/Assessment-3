@@ -6,47 +6,41 @@ document.getElementById('calculateBtn').addEventListener('click', () => {
 });
 
 function calculateEvenSum(arr) {
-    // 1. Variables and Data Types
-    let sum = 0;  // Using let for block-scoped variable
-    const isArrayValid = Array.isArray(arr);  // Check if the input is an array
+    let sum = 0; 
+    const isArrayValid = Array.isArray(arr); 
 
-    // Primitive Data Types demonstration
-    const description = "Sum of Even Numbers Operation";  // String
-    let count = 0;  // Number
-    let valid = true;  // Boolean
-    let nullValue = null;  // Null
-    let undefinedValue;  // Undefined
-    const uniqueSymbol = Symbol('unique');  // Symbol
+    const description = "Sum of Even Numbers Operation";  
+    let count = 0;  
+    let valid = true; 
+    let nullValue = null;  
+    let undefinedValue;  
+    const uniqueSymbol = Symbol('unique');  
 
-    // 2. Operators and 3. Control Structures
     if (isArrayValid && arr.length > 0) {
         for (let i = 0; i < arr.length; i++) {
             if (arr[i] % 2 === 0) {
-                sum += arr[i];  // Use of += operator
+                sum += arr[i]; 
                 count++;
             }
         }
     } else {
         valid = false;
     }
-
-    // Return the result or a message based on validity
     return valid ? sum : 'Invalid array input';
 }
 
 // Additional Array and Object Operations
-
 let sampleArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let modifiedArray = modifyArray(sampleArray);
 
 function modifyArray(arr) {
-    arr.push(11);  // Add elements using push
-    arr.pop();  // Remove last element using pop
-    arr.shift();  // Remove first element using shift
-    arr.unshift(0);  // Add element at the beginning using unshift
-    let splicedArray = arr.splice(2, 3);  // Splice the array
-    let slicedArray = arr.slice(1, 3);  // Slice the array
-    return arr;  // Return the modified array
+    arr.push(11);
+    arr.pop(); 
+    arr.shift(); 
+    arr.unshift(0);  
+    let splicedArray = arr.splice(2, 3); 
+    let slicedArray = arr.slice(1, 3); 
+    return arr; 
 }
 
 // Object Declaration
